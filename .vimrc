@@ -1,4 +1,6 @@
 set nocompatible "be iMproved
+let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
+let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
 filetype off
 
 " Packages {{{
@@ -19,6 +21,9 @@ Plugin 'mxw/vim-jsx', {'for': 'jsx'} " jsx highlighting
 Plugin 'ervandew/supertab' " tab completion (consider replacing with YCM
 Plugin 'tpope/vim-unimpaired' " easy mappings for commands that come in pairs
 Plugin 'tpope/vim-commentary' " toggle comments
+Plugin 'scrooloose/nerdtree' " filetree window
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight' " highlight nerdtree by filetype
+Plugin 'bling/vim-bufferline' " show buffers in status line
 
 call vundle#end()            
 filetype plugin indent on    
@@ -38,6 +43,7 @@ exec 'set shiftwidth=4'
 set number " show line numbers
 set showcmd " show previous command in bottom bar
 set showmatch " highlight matching [{()}]
+set laststatus=2 " always show the statusline
 " }}}
 " Search {{{ 
 set incsearch " search as characters are entered
@@ -72,6 +78,12 @@ let g:user_emmet_settings = {
 \        'extends': 'jsx',
 \    },
 \}
+" toggle nerdtree
+map <leader>f :NERDTreeToggle<CR>
+" enable nerdtree highlighting
+let g:NERDTreeFileExtensionHighlightFullName = 1
+let g:NERDTreeExactMatchHighlightFullName = 1
+let g:NERDTreePatternMatchHighlightFullName = 1
 " }}}
 
 set modeline

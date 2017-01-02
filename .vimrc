@@ -24,6 +24,8 @@ Plugin 'tpope/vim-commentary' " toggle comments
 Plugin 'scrooloose/nerdtree' " filetree window
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight' " highlight nerdtree by filetype
 Plugin 'bling/vim-bufferline' " show buffers in status line
+Plugin 'tpope/vim-markdown' " updated markdown
+Plugin 'tpope/vim-vividchalk' " vividchalk colorscheme
 
 call vundle#end()            
 filetype plugin indent on    
@@ -44,6 +46,7 @@ set number " show line numbers
 set showcmd " show previous command in bottom bar
 set showmatch " highlight matching [{()}]
 set laststatus=2 " always show the statusline
+colorscheme vividchalk " use vividchalk
 " }}}
 " Search {{{ 
 set incsearch " search as characters are entered

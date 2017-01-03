@@ -47,6 +47,8 @@ set showcmd " show previous command in bottom bar
 set showmatch " highlight matching [{()}]
 set laststatus=2 " always show the statusline
 colorscheme vividchalk " use vividchalk
+" use terminal background color
+hi Normal ctermbg=NONE
 " }}}
 " Search {{{ 
 set incsearch " search as characters are entered

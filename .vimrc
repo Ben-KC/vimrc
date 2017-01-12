@@ -26,6 +26,7 @@ Plugin 'tiagofumo/vim-nerdtree-syntax-highlight' " highlight nerdtree by filetyp
 Plugin 'bling/vim-bufferline' " show buffers in status line
 Plugin 'tpope/vim-markdown' " updated markdown
 Plugin 'tpope/vim-vividchalk' " vividchalk colorscheme
+Plugin 'tpope/vim-surround' " easier surroundings
 
 call vundle#end()            
 filetype plugin indent on    
